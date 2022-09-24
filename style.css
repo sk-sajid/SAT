@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+  color: #102a42;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 2.7rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98;
+}
+button {
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+.start {
+  background: green;
+  margin-right: 16px;
+}
+.reset {
+  background: red;
+}
+.orange {
+  background-color: orange;
+}
+.timer-input-btn {
+  background-color: green;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+}
+.goback-btn {
+  background-color: red;
+  margin-left: 0.5rem;
+}
+header {
+  width: 250px;
+  margin: 0rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+header span {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #9eb2c7;
+  font-weight: bold;
+  cursor: pointer;
+}
+header .bold {
+  color: #243a52;
+}
+.stopwatch {
+  margin: 0 auto;
+  width: 250px;
+}
+.stopwatch > div {
+  position: relative;
+}
+.stopwatch > div .time {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: black;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.stopwatch > div .time .label {
+  font-size: 1rem;
+}
+.timer {
+  margin: 0 auto;
+  width: 250px;
+  position: relative;
+}
+.timer > div {
+  position: relative;
+}
+.timer > div .time {
+  margin-left: 4px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.timer > div .time span {
+  color: black;
+  font-size: 2.5rem;
+}
+.timer > div .time .label {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+.timer div svg {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.timer div .time {
+  cursor: pointer;
+}
+.timer-input {
+  position: absolute;
+  top: -150%;
+  width: 100%;
+  height: 100%;
+  background-color: #102a42;
+  padding: 1rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.timer-input section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.timer-input section div {
+  margin-left: 1rem;
+}
+.timer-input section div input {
+  width: 50px;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #102a42;
+  outline: none;
+  border: none;
+  padding: 0.2rem 0.5rem;
+}
+.timer-input section div span {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.timer .display-timer-input {
+  top: 0;
+}
+.indisplay-section {
+  display: none;
+}
+.controls {
+  margin: 0.2rem auto;
+  margin-bottom: 0.5rem;
+  width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.developer {
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #9eb2c7;
+  margin-bottom: 0.5rem;
+}

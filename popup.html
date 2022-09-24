@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITLE OF THE PAGE -->
+
+    <title>SAT</title>
+
+    <!-- CSS FILE -->
+
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+
+<body>
+     <main>
+         <!-- Header Section Starts -->
+        <header>
+            <span class="header-stopwatch bold">Stopwatch</span>
+            <span class="header-timer">Timer</span>
+        </header>
+        <!-- Header Section Ends -->
+
+        <!-- stopwatch section starts -->
+        <section class="stopwatch">
+            <div>
+                <div class="svg">
+                    <svg height = "250px" width = "250px">
+                        <circle 
+                            cx="125"
+                            cy="125"
+                            r="120"
+                            stroke="green"
+                            stroke-width="7"
+                            fill="none"
+                        />
+                    </svg>
+                </div>
+                <div class="time">
+                    00<span class="label">h</span>
+                    00<span class="label">m</span>
+                    00<span class="label">s</span>
+                    00<span class="label">ms</span>
+                </div>
+            </div>
+        </section>
+        <!-- stopwatch section ends -->
+
+        <!-- Timer section starts -->
+        <section class="timer indisplay-section">
+            <div>
+                <div class="svg">
+                    <svg height = "250px" width = "250px">
+                        <circle 
+                            cx="125"
+                            cy="125"
+                            r="120"
+                            stroke="green"
+                            stroke-width="7"
+                            fill="none"
+                            stroke-dasharray = "753.6"
+                        />
+                    </svg>
+                </div>
+                <div class="time">
+                    <span class="duration hours">00</span><span class="label">h</span>
+                    <span class="duration minutes">10</span><span class="label">m</span>
+                    <span class="duration seconds">00</span><span class="label">s</span>
+                </div>
+            </div>
+            <!-- timer-input section starts -->
+            <aside class="timer-input">
+                <section>
+                    <div>
+                        <input type="text" value="00" autocomplete="off" maxlength="2" class="hours-input">
+                        <span>h</span>
+                    </div>
+                    <div>
+                        <input type="text" value="10" autocomplete="off" maxlength="2" class="minutes-input">
+                        <span>m</span>
+                    </div>
+                    <div>
+                        <input type="text" value="00" autocomplete="off" maxlength="2" class="seconds-input">
+                        <span>s</span>
+                    </div>
+                </section>
+                <div>
+                    <button class="timer-input-btn settime-btn">set time</button>
+                    <button class="timer-input-btn goback-btn">go back</button>
+                </div>
+            </aside>
+            <!-- timer-input section ends -->
+        </section>
+    <!-- Timer section ends -->
+    
+    <!-- Controls section starts -->
+        <section class="controls">
+            <button class="start">Start</button>
+            <button class="reset">Reset</button>
+        </section>
+    <!-- Controls section ends -->
+    <!-- Developer Section Starts -->
+    <section class="developer">
+        <span>@Developer Sajid</span>
+    </section>
+    <!-- Developer Section Ends -->
+     </main>
+    <!-- JAVASCRIPT FILE -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

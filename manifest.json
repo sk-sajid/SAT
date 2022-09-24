@@ -1,0 +1,16 @@
+{
+    "name" : "SAT",
+    "version" : "1.0",
+    "manifest_version" : 2,
+    "description" :"Stopwatch and timer",
+    "icons" : {
+        "128" : "icon128.png",
+        "48" : "icon48.png",
+        "16" : "icon16.png"
+    },
+    "browser_action" : {
+        "default_popup" : "popup.html",
+        "default_icon" : "icon16.png"
+    },
+    "permissions" : ["notifications"]
+}
